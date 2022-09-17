@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="Scss/main.css">
+</head>
+
+<body>
+    <div class="kanban">
+        <div class="kanban_column">
+            <!-- Title -->
+            <div class="kanban_column-title">Not started</div>
+            <!-- List of items -->
+            <div class="kanban_items">
+                <div contenteditable class="items_item-input">Wash the dishes</div> <!-- This area the user can edit -->
+                <div class="sample_dropzone"></div>
+            </div>
+            <!-- Button to add a new item -->
+            <button class="banan_add-item" type="button">+ add</button>
+        </div>
+    </div>
+</body>
+<script src="Js/main.js" type="module"></script>
+
+</html>
