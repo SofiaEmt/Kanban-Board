@@ -1,0 +1,113 @@
+:root {
+    --white: #FFFFFF;
+    --pink: #FF595E;
+    --yellow: #FFCA3A;
+    --green: #8AC926;
+    --dark-pink: #DE5054;
+    --dark-yellow: #E3B432;
+    --main-font: 'Lora', serif;
+    --title-font: 'Oswald', sans-serif;
+    --border-radius: 7px;
+}
+
+
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    background-color: var(--white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.kanban {
+    display: flex;
+    justify-content: center;
+
+    width: 80%;
+    height: 70%;
+    padding: 2em;
+
+}
+
+.kanban * {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.kanban_column {
+    flex: 1;
+    background-color: var(--pink);
+    padding: 0em 1em 1.5em;
+    border-radius: var(--border-radius);
+    margin: 1em;
+
+}
+
+[data-id="2"] {
+    background: var(--yellow);
+}
+
+[data-id="3"] {
+    background: var(--green);
+
+    .kanban_add-item {
+        display: none;
+    }
+}
+
+.kanban_column-title {
+    font-family: var(--title-font);
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 1em;
+    user-select: none;
+
+    text-align: left;
+    background: var(--white);
+    max-width: 50%;
+    border-radius: 0px 0px 7px 7px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0.2em 1em;
+}
+
+.items_item-input {
+    padding: 10px 15px;
+    //margin-bottom: 1em;
+    box-sizing: border-box;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.item-active {
+    transform: scale(2);
+}
+
+.kanban_dropzone {
+    height: 1em;
+    transition: background 0.15s, height 0.15s;
+}
+
+.kanban_dropzone--active {
+    height: 1.2em;
+    background-color: rgba(0, 0, 0, 0.25);
+    //border-radius: var(--border-radius);
+    margin-top: .2em;
+}
+
+.kanban_add-item {
+    width: 100%;
+    padding: 10px 0;
+
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: var(--border-radius);
+
+    cursor: pointer;
+}
