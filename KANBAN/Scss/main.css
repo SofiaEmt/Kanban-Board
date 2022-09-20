@@ -58,6 +58,10 @@ body {
   background: var(--yellow);
 }
 
+[data-id="2"] .kanban_add-item {
+  display: none;
+}
+
 [data-id="3"] {
   background: var(--green);
 }
@@ -108,6 +112,7 @@ body {
   height: 1.2em;
   background-color: rgba(0, 0, 0, 0.25);
   margin-top: .2em;
+  margin-bottom: .2em;
 }
 
 .kanban_add-item {

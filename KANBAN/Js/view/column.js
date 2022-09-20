@@ -13,19 +13,16 @@ export default class Column {
         this.elements.items = this.elements.root.querySelector(".kanban_column-items");
         this.elements.addItem = this.elements.root.querySelector(".kanban_add-item");
 
-/*         if (this.elements.title.textContent == "Completed") {
-            this.elements.root.querySelector(".kanban_add-item");
-        }
-     */
         this.elements.root.dataset.id = id;
         this.elements.title.textContent = title;
         this.elements.items.appendChild(topDropZone);
-    
-        this.elements.addItem.addEventListener("click", () => {
-            const newItem = kanbanAPI.insertItem(id, []);
 
-            this.renderItem(newItem);
-        });
+        this.elements.addItem.addEventListener("click", () => {
+			const newItem = kanbanAPI.insertItem(id, "");
+
+			this.renderItem(newItem);
+		});
+
 
         //Call the API
         kanbanAPI.getItems(id).forEach(item => {
