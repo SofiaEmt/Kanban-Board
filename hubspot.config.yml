@@ -1,0 +1,12 @@
+defaultPortal: sofiaemteryd
+portals:
+  - name: sofiaemteryd
+    portalId: 26290936
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: >-
+          CIzNhdS3MBIJAA0AAAAA4A0DGPjVxAwgqI28Fiju6QwyFMZskHGCdpNV0trhjOV7EWcFxc3WOjcAAARBAAAAeAAAAAAAAAAAAAAAAAAAAAQAAMAHAP7_MTwAAAYAAABgAAAAAAAAAAAAAAAAADACQhTe7HyyNen6q6Kgt4kRDeZSjUqOU0oDZXUxUgBaAA
+        expiresAt: '2022-09-26T15:54:04.303Z'
+    personalAccessKey: >-
+      CiRldTEtMjI1Ny1hMTlkLTQ2Y2MtOWJkMi1iY2JmMzEzNjJjYWMQ-NXEDBiojbwWKhkABeaRgrLH4YFrazL2CtZXdHxDRN0tm8dRSgNldTE
